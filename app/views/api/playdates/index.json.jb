@@ -1,0 +1,10 @@
+@places.parse["businesses"].map do |place|
+  {
+    name: place["name"],
+    location: place["location"]["display_address"],
+    phone: place["phone"]
+    # image_url: place.image_url,
+    # status: place.is_closed,
+    # address: place.address,
+  }
+end
