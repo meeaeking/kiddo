@@ -1,8 +1,8 @@
-@places.parse["businesses"].map do |place|
+@playdates.parse["businesses"].map do |playdate|
   {
-    name: place["name"],
-    location: place["location"]["display_address"],
-    phone: place["phone"]
+    name: playdate["name"],
+    location: playdate["location"]["display_address"],
+    phone: playdate["phone"]
     # image_url: place.image_url,
     # status: place.is_closed,
     # address: place.address,
