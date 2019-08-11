@@ -7,4 +7,11 @@ class Api::PlaydatesController < ApplicationController
     
     render 'index.json.jb'
   end
+
+  def show
+
+    @playdate = HTTP.get("https://api.yelp.com/v3/businesses/#{params[:id]}",headers:{Authorization: "Bearer #{ENV["API_KEY"]}"}).parse
+    render 'show.json.jb'
+  end
+
 end

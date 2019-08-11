@@ -2,7 +2,8 @@
   {
     name: playdate["name"],
     location: playdate["location"]["display_address"],
-    phone: playdate["phone"]
+    phone: playdate["phone"],
+    id: playdate["id"]
     # image_url: place.image_url,
     # status: place.is_closed,
     # address: place.address,
