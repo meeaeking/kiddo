@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :friend_requests
   # EXAMPLE HTML ROUTE
   # get "/photos" => "photos#index"
 
@@ -7,5 +8,8 @@ Rails.application.routes.draw do
   #   get "/photos" => "photos#index"
     get "/playdates" => "playdates#index"
     get "/playdates/:id" => "playdates#show"
+
+    post "/users" => "users#create"
+    post "/sessions" => "sessions#create"
   end
 end

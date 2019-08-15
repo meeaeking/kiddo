@@ -3,6 +3,6 @@
   location: @playdate["location"]["display_address"],
   phone: @playdate["phone"],
   # image_url: place.image_url,
-  status: @playdate["is_closed"]
+  closed: @playdate["is_closed"]
   # address: place.address,
 }
