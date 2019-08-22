@@ -3,9 +3,8 @@
     name: playdate["name"],
     location: playdate["location"]["display_address"],
     phone: playdate["phone"],
-    id: playdate["id"]
-    # image_url: place.image_url,
-    # status: place.is_closed,
-    # address: place.address,
+    id: playdate["id"],
+    image_url: playdate["image_url"],
+    yelp_url: playdate["url"]
   }
 end
