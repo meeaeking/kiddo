@@ -14,5 +14,6 @@ Rails.application.routes.draw do
 
     get "/friendships" => "friendships#index"
     get "/notfriends" => "friendships#notfriends"
+    get "/seefriends" => "friendships#seefriends"
   end
 end

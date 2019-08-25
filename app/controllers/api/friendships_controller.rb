@@ -8,4 +8,9 @@ class Api::FriendshipsController < ApplicationController
     @notfriends = User.all - current_user.friends - [current_user]
     render 'notfriends.json.jb'
   end
+
+  def seefriends
+    @seefriends = current_user.friends
+    render 'seefriends.json.jb'
+  end
 end
