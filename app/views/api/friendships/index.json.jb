@@ -1,0 +1,8 @@
+@friendships.map do |friendship|
+  {
+    friend: friendship.friend_id,
+    user: friendship.user_id
+
+  }
+
+end

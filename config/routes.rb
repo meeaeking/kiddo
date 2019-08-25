@@ -11,5 +11,8 @@ Rails.application.routes.draw do
 
     post "/users" => "users#create"
     post "/sessions" => "sessions#create"
+
+    get "/friendships" => "friendships#index"
+    get "/notfriends" => "friendships#notfriends"
   end
 end
