@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     post "/sessions" => "sessions#create"
 
     get "/friendships" => "friendships#index"
+    post "/friendships" => "friendships#create"
     get "/notfriends" => "friendships#notfriends"
     get "/seefriends" => "friendships#seefriends"
   end

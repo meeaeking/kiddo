@@ -13,4 +13,16 @@ class Api::FriendshipsController < ApplicationController
     @seefriends = current_user.friends
     render 'seefriends.json.jb'
   end
+
+  def create
+    @friendship = Friendship.new(
+      user_id: current_user.id,
+      friend_id: params[:friend_id]
+      )
+    p current_user.id
+    p friend_id: params[:friend_id]
+    @friendship.save!
+
+    render 'show.json.jb'
+  end
 end
