@@ -2,7 +2,12 @@
   name: @playdate["name"],
   location: @playdate["location"]["display_address"],
   phone: @playdate["phone"],
-  # image_url: place.image_url,
-  closed: @playdate["is_closed"]
-  # address: place.address,
+  image_url: @playdate["image_url"],
+  display_phone: @playdate["display_phone"],
+  hours: @playdate["hours"],
+  special_hours: @playdate["special_hours"],
+  categories: @playdate["categories"],
+  Monday: @playdate["hours.is_open_now"]
+
+
 }
